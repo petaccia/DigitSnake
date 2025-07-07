@@ -1,10 +1,10 @@
-import Image from "next/image";
+import DigitSnakeLogo from "../components/logo/Logo";
 
 export default function Home() {
   return (
     <div >
       <main>
-        <h1 className="text-4xl font-bold">Hello World</h1>
+        <DigitSnakeLogo />
       </main>
     </div>
   );
