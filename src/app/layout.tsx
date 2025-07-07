@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {Roboto, Poppins, Playfair_Display, JetBrains_Mono, Fira_Code } from "next/font/google";
+import {Roboto, Poppins, Playfair_Display, JetBrains_Mono, Fira_Code, Ma_Shan_Zheng } from "next/font/google";
 import "./globals.css";
 
 const roboto = Roboto ({
@@ -37,6 +37,13 @@ const firaCode = Fira_Code ({
   weight: "400",
 });
 
+const maShanZheng = Ma_Shan_Zheng ({
+  subsets: ["latin"],
+  variable: "--font-ma-shan-zheng",
+  display: "swap",
+  weight: "400",
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -57,6 +64,7 @@ export default function RootLayout({
           ${playfairDisplay.variable} 
           ${jetBrainsMono.variable} 
           ${firaCode.variable} 
+          ${maShanZheng.variable}
           antialiased`
         }
       >
