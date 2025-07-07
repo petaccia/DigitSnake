@@ -20,18 +20,6 @@ export default function Home() {
         <CTASection />
       </main>
 
-      {/* Footer */}
-      <footer className="py-6 bg-primary/95 text-gray-300">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; {new Date().getFullYear()} DigitSnake. Tous droits réservés.</p>
-            <div className="mt-4 md:mt-0 flex space-x-6">
-              <a href="/mentions-legales" className="hover:text-white transition-colors">Mentions Légales</a>
-              <a href="/politique-confidentialite" className="hover:text-white transition-colors">Politique de Confidentialité</a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
