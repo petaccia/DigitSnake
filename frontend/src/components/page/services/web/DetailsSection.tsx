@@ -23,13 +23,33 @@ export default function DetailsSection() {
             bgOpacity={85}
           />
           <Card
-            title="Pack Premium & Sur Mesure"
-            description="Des solutions adaptées pour des sites plus complexes ou des applications web Full Stack selon vos besoins spécifiques."
-            features={["Sites multi-pages ou e-commerce", "Applications web personnalisées", "Support technique continu"]}
-            link="/services/web/pack-premium"
-            accentColor="octonary"
-            bgOpacity={80}
+            title="Pack Standard"
+            description="Un site vitrine complet de 5 pages pour une présentation détaillée de votre activité. Parfait pour une présence en ligne professionnelle et étoffée."
+            features={["Accueil, Services, À Propos, FAQ/Galerie statique, Contact", "Design personnalisé", "Intégration de contenu"]}
+            link="/services/web/pack-standard"
+            accentColor="tertiary"
+            bgOpacity={90}
           />
+          <div className="md:col-span-3 flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+              <Card
+                title="Pack Premium"
+                description="Des solutions adaptées pour des sites plus complexes selon vos besoins spécifiques."
+                features={["Sites multi-pages", "Options avancées", "Support technique"]}
+                link="/services/web/pack-premium"
+                accentColor="prenium"
+                bgOpacity={80}
+              />
+              <Card
+                title="Offre Full Stack"
+                description="Applications web Full Stack sur mesure pour des projets complexes selon vos besoins spécifiques."
+                features={["Frontend et backend", "Applications personnalisées", "Support technique continu"]}
+                link="/services/web/full-stack"
+                accentColor="octonary"
+                bgOpacity={80}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
