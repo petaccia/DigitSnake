@@ -1,16 +1,42 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {Roboto, Poppins, Playfair_Display, JetBrains_Mono, Fira_Code } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const roboto = Roboto ({
   subsets: ["latin"],
+  variable: "--font-roboto",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins ({
   subsets: ["latin"],
+  variable: "--font-poppins",
+  display: "swap",
+  weight: "400",
 });
+
+const playfairDisplay = Playfair_Display ({
+  subsets: ["latin"],
+  variable: "--font-playfair-display",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+
+const jetBrainsMono = JetBrains_Mono ({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+  display: "swap",
+  weight: "400",
+});
+
+const firaCode = Fira_Code ({
+  subsets: ["latin"],
+  variable: "--font-fira-code",
+  display: "swap",
+  weight: "400",
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +51,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+          ${roboto.variable} 
+          ${poppins.variable} 
+          ${playfairDisplay.variable} 
+          ${jetBrainsMono.variable} 
+          ${firaCode.variable} 
+          antialiased`
+        }
       >
         {children}
       </body>
