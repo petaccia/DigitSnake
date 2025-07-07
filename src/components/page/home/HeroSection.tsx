@@ -11,7 +11,7 @@ const HeroSection = () => {
           <section className="md:w-1/2 mb-8 md:mb-0">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Bienvenue chez <span className="text-secondary">DigitSnake</span></h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200">
-              Votre partenaire pour des <span className="text-secondary">solutions numériques accessibles</span>. Nous offrons des services de <span className="text-secondary">création web</span> et de <span className="text-secondary">dépannage informatique</span> pour particuliers, professionnels et seniors.
+              Votre partenaire pour des <span className="text-senary">solutions numériques accessibles</span>. Nous offrons des services de <span className="text-secondary">création web</span> et de <span className="text-octonary">dépannage informatique</span> pour particuliers, professionnels et seniors.
             </p>
             <a href="/devis" className="inline-block bg-secondary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary/90 transition-colors">
               Obtenir un Devis Gratuit
