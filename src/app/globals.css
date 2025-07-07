@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+@theme  {
+  --color-primary: #051c29; /* bleu foncè*/
+  --color-secondary: #14b8a6; /* bleu clair*/
+  --color-tertiary: #f9fafb; /* blanc*/
+  --color-quaternary	: #9ca3af; /* gris*/
+  --color-octonary: #f59e0b ; /*orange*/
+
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-playfair-display: "Playfair Display", serif;
+  --font-jetbrains-mono: "JetBrains Mono", monospace;
+  --font-fira-code: "Fira Code", monospace;
+
+}
+
+
+body {
+  @apply w-full h-full bg-primary text-octonary;
+}
+
+
