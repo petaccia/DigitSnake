@@ -1,13 +1,11 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import LogoNavbar from "../logo/LogoNavbar";
 import DesktopMenu from "./DesktopMenu";
+import DesktopButton from "./utils/buttons/DesktopButton";
 
 const Navbar = () => {
-  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
 
 
@@ -31,15 +29,7 @@ const Navbar = () => {
             <DesktopMenu />
 
           {/* CTA Button Desktop */}
-          <div className="hidden lg:flex items-center">
-            <Link
-              href="/devis"
-              className="btn-primary flex items-center space-x-2 hover:scale-105 transform transition-all duration-200 px-6 py-2.5"
-            >
-              <span>Devis Gratuit</span>
-            </Link>
-          </div>
-
+          <DesktopButton />
         </div>
       </div>
     </nav>
