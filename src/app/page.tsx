@@ -1,4 +1,6 @@
 import HeroSection from "../components/page/home/HeroSection";
+import AboutSection from "../components/page/home/AboutSection";
+import ServicesSection from "../components/page/home/ServicesSection";
 
 export default function Home() {
   return (
@@ -8,52 +10,10 @@ export default function Home() {
         <HeroSection />
 
         {/* About Section */}
-        <section className="py-16 md:py-24 bg-primary/90">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">À Propos de DigitSnake</h2>
-            <div className="max-w-3xl mx-auto text-center">
-              <p className="text-lg text-gray-200 mb-6">
-                DigitSnake est dédié à rendre l’informatique simple et accessible à tous. Notre mission est d’accompagner nos clients, avec un accent particulier sur les seniors, pour réduire la fracture numérique.
-              </p>
-              <p className="text-lg text-gray-200">
-                Que ce soit pour un site web sur mesure ou un dépannage informatique, nous proposons des solutions personnalisées adaptées à vos besoins.
-              </p>
-            </div>
-          </div>
-        </section>
+        <AboutSection />
 
         {/* Services Section */}
-        <section className="py- v16 md:py-24 bg-primary/85">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Nos Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <article className="bg-primary/80 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-semibold mb-4">Création de Sites Web</h3>
-                <p className="text-gray-300 mb-4">
-                  De la vitrine simple OnePage Express à l’application web Full Stack, nous concevons des sites modernes et performants adaptés à votre budget.
-                </p>
-                <ul className="list-disc list-inside text-gray-300 space-y-1">
-                  <li>OnePage Express : 300 € TTC</li>
-                  <li>Pack Starter (3 pages) : 450-500 € TTC</li>
-                  <li>Pack Premium (5+ pages) : 1200-1500 € TTC</li>
-                  <li>Applications Web sur mesure</li>
-                </ul>
-              </article>
-              <article className="bg-primary/80 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-semibold mb-4">Dépannage Informatique</h3>
-                <p className="text-gray-300 mb-4">
-                  Support, maintenance et formation pour tous, avec des tarifs réduits pour les seniors.
-                </p>
-                <ul className="list-disc list-inside text-gray-300 space-y-1">
-                  <li>Diagnostic & dépannage rapide</li>
-                  <li>Installation matériel et logiciel</li>
-                  <li>Formation personnalisée seniors</li>
-                  <li>Taux horaire : 50 €/h (40 €/h seniors)</li>
-                </ul>
-              </article>
-            </div>
-          </div>
-        </section>
+        <ServicesSection />
 
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-primary/80 to-primary">
