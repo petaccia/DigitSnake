@@ -3,10 +3,12 @@
 
 @theme  {
   --color-primary: #051c29; /* bleu foncè*/
-  --color-secondary: #14b8a6; /* bleu clair*/
-  --color-tertiary: #f9fafb; /* blanc*/
-  --color-quaternary	: #9ca3af; /* gris*/
-  --color-octonary: #f59e0b ; /*orange*/
+  --color-secondary: #14b8a6; /* bleu clair - informatique */
+  --color-tertiary: #f9fafb; /* blanc */
+  --color-quaternary: #9ca3af; /* gris - fracture numérique */
+  --color-quinary: #10b981; /* vert - site web */
+  --color-senary: #8b5cf6; /* violet - seniors */
+  --color-octonary: #f59e0b; /* orange - dépannage informatique */
 
   --font-roboto: "Roboto", sans-serif;
   --font-poppins: "Poppins", sans-serif;
@@ -21,5 +23,3 @@
 body {
   @apply w-full h-full bg-primary text-octonary;
 }
-
-
