@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {Roboto, Poppins, Playfair_Display, JetBrains_Mono, Fira_Code, Ma_Shan_Zheng } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navigation/Navbar";
 
 const roboto = Roboto ({
   subsets: ["latin"],
@@ -68,6 +69,7 @@ export default function RootLayout({
           antialiased`
         }
       >
+        <Navbar />
         {children}
       </body>
     </html>
