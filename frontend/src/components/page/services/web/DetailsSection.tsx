@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "@/components/common/Card";
 
 export default function DetailsSection() {
   return (
@@ -11,24 +11,27 @@ export default function DetailsSection() {
             description="Une page unique, idéale pour une présence en ligne rapide et efficace. Parfait pour les portfolios ou les petites entreprises."
             features={["Design moderne et responsive", "Mise en ligne rapide", "Optimisation SEO de base"]}
             link="/services/web/onepage-express"
-            accentColor="quinary"
+            accentColor="onepage"
             bgOpacity={90}
+            theme="web"
           />
           <Card
             title="Pack Starter"
             description="Un site de 3 pages pour présenter votre activité de manière professionnelle avec une structure claire."
             features={["Accueil, À Propos, Contact", "Design personnalisé", "Intégration de contenu"]}
             link="/services/web/pack-starter"
-            accentColor="senary"
+            accentColor="starter"
             bgOpacity={85}
+            theme="web"
           />
           <Card
             title="Pack Standard"
             description="Un site vitrine complet de 5 pages pour une présentation détaillée de votre activité. Parfait pour une présence en ligne professionnelle et étoffée."
             features={["Accueil, Services, À Propos, FAQ/Galerie statique, Contact", "Design personnalisé", "Intégration de contenu"]}
             link="/services/web/pack-standard"
-            accentColor="tertiary"
+            accentColor="standard"
             bgOpacity={90}
+            theme="web"
           />
           <div className="md:col-span-3 flex justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
@@ -39,14 +42,16 @@ export default function DetailsSection() {
                 link="/services/web/pack-premium"
                 accentColor="prenium"
                 bgOpacity={80}
+                theme="web"
               />
               <Card
                 title="Offre Full Stack"
                 description="Applications web Full Stack sur mesure pour des projets complexes selon vos besoins spécifiques."
                 features={["Frontend et backend", "Applications personnalisées", "Support technique continu"]}
                 link="/services/web/full-stack"
-                accentColor="octonary"
+                accentColor="fullstack"
                 bgOpacity={80}
+                theme="web"
               />
             </div>
           </div>

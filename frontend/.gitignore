@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# cahier des charges
+CahierDesCharges_DigitSnake_2025.md
