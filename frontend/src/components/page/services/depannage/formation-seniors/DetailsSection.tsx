@@ -56,7 +56,7 @@ export default function DetailsSection() {
                   Formation Personnalisée Seniors
                 </h3>
                 <div className="px-4 py-2 bg-[#9b59b6]/80 text-white rounded-full font-bold text-lg">
-                  À partir de <span className="text-white">40€ HT/heure</span>
+                  <span className="text-white">48€ TTC/heure</span>
                 </div>
               </div>
               
@@ -96,11 +96,11 @@ export default function DetailsSection() {
                   </h4>
                   <ul className="space-y-4">
                     {[
-                      { text: "Sessions à domicile", price: "+20€ HT" },
-                      { text: "Formation sur tablette/smartphone", price: "+15€ HT" },
-                      { text: "Cours en petit groupe (2-4 personnes)", price: "-10€ HT/personne" },
-                      { text: "Forfait 10 séances", price: "350€ HT" },
-                      { text: "Support téléphonique post-formation (1 mois)", price: "+30€ HT" }
+                      { text: "Sessions à domicile", price: "+24€ TTC" },
+                      { text: "Formation sur tablette/smartphone", price: "+18€ TTC" },
+                      { text: "Cours en petit groupe (2-4 personnes)", price: "-12€ TTC/personne" },
+                      { text: "Forfait 10 séances", price: "420€ TTC" },
+                      { text: "Support téléphonique post-formation (1 mois)", price: "+36€ TTC" }
                     ].map((option, index) => (
                       <li key={index} className="flex justify-between items-start">
                         <div className="flex">

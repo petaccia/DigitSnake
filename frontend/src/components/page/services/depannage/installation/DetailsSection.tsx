@@ -35,7 +35,7 @@ export default function DetailsSection() {
         </motion.div>
         
         <motion.div 
-          className="max-w-6xl mx-auto"
+          className="max-w-7xl mx-auto"
           variants={container}
           initial="hidden"
           whileInView="show"
@@ -56,7 +56,7 @@ export default function DetailsSection() {
                   Installation Système Premium
                 </h3>
                 <div className="px-4 py-2 bg-[#27ae60]/80 text-white rounded-full font-bold text-lg">
-                  À partir de <span className="text-white">60€ HT/heure</span>
+                  <span className="text-white">72€ TTC/heure</span>
                 </div>
               </div>
               
@@ -96,11 +96,11 @@ export default function DetailsSection() {
                   </h4>
                   <ul className="space-y-4">
                     {[
-                      { text: "Transfert de données depuis ancien système", price: "+40€ HT" },
-                      { text: "Installation de logiciels spécifiques", price: "+30€ HT" },
-                      { text: "Configuration de réseau domestique", price: "+50€ HT" },
-                      { text: "Formation rapide à l'utilisation", price: "+30€ HT/heure" },
-                      { text: "Sauvegarde initiale des données", price: "+60€ HT" }
+                      { text: "Transfert de données depuis ancien système vers le nouveau", price: "+48€ TTC" },
+                      { text: "Installation de logiciels spécifiques", price: "+36€ TTC" },
+                      { text: "Configuration de réseau domestique", price: "+60€ TTC" },
+                      { text: "Formation rapide à l'utilisation", price: "+36€ TTC/heure" },
+                      { text: "Sauvegarde initiale des données pour sécurité", price: "+72€ TTC" }
                     ].map((option, index) => (
                       <li key={index} className="flex justify-between items-start">
                         <div className="flex">

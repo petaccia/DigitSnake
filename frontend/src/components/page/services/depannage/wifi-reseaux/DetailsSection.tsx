@@ -56,12 +56,12 @@ export default function DetailsSection() {
                   Configuration Réseau Premium
                 </h3>
                 <div className="px-4 py-2 bg-[#e74c3c]/80 text-white rounded-full font-bold text-lg">
-                  À partir de <span className="text-white">70€ HT/heure</span>
+                  <span className="text-white">84€ TTC/heure</span>
                 </div>
               </div>
               
               <p className="text-gray-300 mb-8 text-lg max-w-3xl">
-                Notre service de configuration et de sécurisation des réseaux Wi-Fi garantit une connexion stable et protégée, adaptée à vos besoins spécifiques, que ce soit pour un usage domestique ou professionnel.
+                Notre service de configuration Wi-Fi et réseaux prend en charge l'installation, l'optimisation et la sécurisation de vos connexions réseau domestiques pour une connectivité fiable et performante. Si la portée de votre Wi-Fi est insuffisante dans certaines zones de votre maison, je peux installer un routeur puissant et, si besoin, ajouter des répéteurs pour assurer une couverture optimale dans toute la maison, y compris dans les coins les plus reculés. Tout cela, sans câbles ni installations complexes !
               </p>
               
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -96,11 +96,11 @@ export default function DetailsSection() {
                   </h4>
                   <ul className="space-y-4">
                     {[
-                      { text: "Installation de points d'accès supplémentaires", price: "+50€ HT" },
-                      { text: "Configuration de VPN pour sécurité accrue", price: "+80€ HT" },
-                      { text: "Analyse approfondie des interférences", price: "+40€ HT" },
+                      { text: "Installation de points d'accès supplémentaires", price: "+60€ TTC" },
+                      { text: "Configuration de VPN pour sécurité accrue", price: "+96€ TTC" },
+                      { text: "Analyse approfondie des interférences", price: "+48€ TTC" },
                       { text: "Mise en place de réseau mesh", price: "Sur devis" },
-                      { text: "Contrat de maintenance réseau annuel", price: "+150€ HT" }
+                      { text: "Contrat de maintenance réseau annuel", price: "+180€ TTC" }
                     ].map((option, index) => (
                       <li key={index} className="flex justify-between items-start">
                         <div className="flex">

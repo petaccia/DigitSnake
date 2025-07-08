@@ -56,7 +56,7 @@ export default function DetailsSection() {
                   Support Technique Premium
                 </h3>
                 <div className="px-4 py-2 bg-[#f39c12]/80 text-white rounded-full  font-bold text-lg">
-                  À partir de <span className="text-white">60€ TTC/heure</span>
+                   <span className="text-white">60€ TTC/heure</span>
                 </div>
               </div>
               
@@ -99,8 +99,6 @@ export default function DetailsSection() {
                       { text: "Intervention en dehors des heures ouvrables", price: "+30€ TTC" },
                       { text: "Déplacement sur site (au-delà de 20 km)", price: "+42€ TTC" },
                       { text: "Contrat de maintenance annuelle personnalisé", price: "+144€ TTC" },
-                      { text: "Support prioritaire (réponse garantie sous 2h)", price: "+192€ TTC/mois" },
-                      { text: "Solution de sauvegarde externalisée sécurisée", price: "+72€ TTC/mois" }
                     ].map((option, index) => (
                       <li key={index} className="flex justify-between items-start">
                         <div className="flex">

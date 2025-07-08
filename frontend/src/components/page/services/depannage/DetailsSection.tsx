@@ -44,6 +44,8 @@ export default function DetailsSection() {
             accentColor="network"
             theme="it"
           />
+          <div className="md:col-span-3 flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card
             title="Wi-Fi et Réseaux"
             description="Installation et sécurisation de réseaux Wi-Fi pour une connexion fiable et protégée."
@@ -68,18 +70,8 @@ export default function DetailsSection() {
             accentColor="seniors"
             theme="it"
           />
-          <Card
-            title="Assistance à Distance"
-            description="Support technique rapide sans déplacement, pour résoudre vos problèmes à distance."
-            features={[
-              "Diagnostic via connexion sécurisée",
-              "Résolution de problèmes logiciels",
-              "Conseils en direct"
-            ]}
-            link="/services/depannage/assistance-distance"
-            accentColor="support"
-            theme="it"
-          />
+          </div>
+          </div>
         </div>
         <div className="mt-12 bg-yellow-50 rounded-2xl p-6 md:p-8 border border-yellow-200 max-w-4xl mx-auto">
           <h3 className="text-xl font-bold mb-2 text-yellow-800">Note Importante (Travail Solo)</h3>
