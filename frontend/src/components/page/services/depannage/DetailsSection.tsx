@@ -1,46 +1,84 @@
 "use client";
 
-import Card from "@/components/page/services/web/Card";
+import Card from "@/components/common/Card";
 
 export default function DetailsSection() {
   return (
     <section className="py-16 md:py-24 bg-background" id="details">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white drop-shadow-lg">Nos Offres de Dépannage Informatique</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card
-            title="Intervention Rapide"
-            description="Résolution de problèmes informatiques de base à distance ou sur site (selon localisation)."
+            title="Support et Maintenance"
+            description="Diagnostic et résolution de problèmes matériels et logiciels pour vos équipements."
             features={[
-              "Diagnostic et réparation de pannes simples",
-              "Nettoyage de virus/malwares de base",
-              "Configuration logicielle"
+              "Diagnostic précis des pannes",
+              "Réparation matériel et logiciel",
+              "Optimisation et maintenance préventive"
             ]}
             link="#contact"
-            accentColor="senary"
+            accentColor="hardware"
+            theme="it"
           />
           <Card
-            title="Forfait Réparation"
-            description="Réparation complète pour des problèmes complexes nécessitant plusieurs heures de travail."
+            title="Installation"
+            description="Mise en place de systèmes d'exploitation, logiciels et protections antivirus."
             features={[
-              "Réparation de pannes matérielles/logicielles",
-              "Réinstallation système d'exploitation",
-              "Récupération de données (si possible)"
+              "Installation d'OS (Windows, Ubuntu)",
+              "Configuration de logiciels",
+              "Mise en place d'antivirus"
             ]}
             link="#contact"
-            accentColor="tertiary"
-           
+            accentColor="software"
+            theme="it"
           />
           <Card
-            title="Contrat de Maintenance"
-            description="Support technique continu pour les entreprises ou particuliers avec des besoins réguliers."
+            title="Matériel"
+            description="Vente et assemblage de matériel informatique reconditionné ou neuf selon vos besoins."
             features={[
-              "Maintenance préventive mensuelle",
-              "Support prioritaire (téléphonique/distant)",
-              "Interventions sur site incluses (selon contrat)"
+              "Conseils personnalisés",
+              "Assemblage sur mesure",
+              "Solutions reconditionnées écologiques"
             ]}
             link="#contact"
-            accentColor="octonary"
+            accentColor="network"
+            theme="it"
+          />
+          <Card
+            title="Wi-Fi et Réseaux"
+            description="Installation et sécurisation de réseaux Wi-Fi pour une connexion fiable et protégée."
+            features={[
+              "Configuration de réseaux sans fil",
+              "Sécurisation contre les intrusions",
+              "Optimisation de la couverture"
+            ]}
+            link="#contact"
+            accentColor="security"
+            theme="it"
+          />
+          <Card
+            title="Formation Seniors"
+            description="Accompagnement individualisé pour maîtriser les bases de l'informatique et du numérique."
+            features={[
+              "Apprentissage bureautique et internet",
+              "Sécurité en ligne",
+              "Utilisation des réseaux sociaux"
+            ]}
+            link="#contact"
+            accentColor="seniors"
+            theme="it"
+          />
+          <Card
+            title="Assistance à Distance"
+            description="Support technique rapide sans déplacement, pour résoudre vos problèmes à distance."
+            features={[
+              "Diagnostic via connexion sécurisée",
+              "Résolution de problèmes logiciels",
+              "Conseils en direct"
+            ]}
+            link="#contact"
+            accentColor="support"
+            theme="it"
           />
         </div>
         <div className="mt-12 bg-yellow-50 rounded-2xl p-6 md:p-8 border border-yellow-200 max-w-4xl mx-auto">
