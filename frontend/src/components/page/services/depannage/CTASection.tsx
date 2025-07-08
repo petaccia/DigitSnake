@@ -2,7 +2,10 @@
 
 export default function CTASection() {
   return (
-    <section className="py-16 md:py-24 bg-indigo-900/50" id="contact">
+    <section className="py-16 md:py-24 bg-blue-900/30 relative overflow-hidden" id="contact">
+      <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('https://unsplash.com/fr/photos/un-ordinateur-portable-dell-avec-un-ecran-rouge-1C5F88Af9ZU')" }}>
+        {/* Replace the URL with a specific Unsplash image related to technical support or customer service */}
+      </div>
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 drop-shadow-lg">Besoin d'une Assistance Informatique ?</h2>
