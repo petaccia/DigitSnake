@@ -7,7 +7,7 @@ export default function MaterielHeroSection() {
     <HeroSection
       title="Vente de Matériel Informatique"
       description="Vente d'ordinateurs et composants reconditionnés ou neufs, adaptés à vos besoins personnels ou professionnels."
-      backgroundImage="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      backgroundImage="https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
       badgeText="Service professionnel"
       primaryButtonText="Demander un devis"
       primaryButtonLink="#contact"
