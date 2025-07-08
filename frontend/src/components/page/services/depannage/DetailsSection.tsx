@@ -16,7 +16,7 @@ export default function DetailsSection() {
               "Réparation matériel et logiciel",
               "Optimisation et maintenance préventive"
             ]}
-            link="#contact"
+            link="/services/depannage/support-maintenance"
             accentColor="hardware"
             theme="it"
           />
@@ -28,7 +28,7 @@ export default function DetailsSection() {
               "Configuration de logiciels",
               "Mise en place d'antivirus"
             ]}
-            link="#contact"
+            link="/services/depannage/installation"
             accentColor="software"
             theme="it"
           />
@@ -40,7 +40,7 @@ export default function DetailsSection() {
               "Assemblage sur mesure",
               "Solutions reconditionnées écologiques"
             ]}
-            link="#contact"
+            link="/services/depannage/materiel"
             accentColor="network"
             theme="it"
           />
@@ -52,7 +52,7 @@ export default function DetailsSection() {
               "Sécurisation contre les intrusions",
               "Optimisation de la couverture"
             ]}
-            link="#contact"
+            link="/services/depannage/wifi-reseaux"
             accentColor="security"
             theme="it"
           />
@@ -64,7 +64,7 @@ export default function DetailsSection() {
               "Sécurité en ligne",
               "Utilisation des réseaux sociaux"
             ]}
-            link="#contact"
+            link="/services/depannage/formation-seniors"
             accentColor="seniors"
             theme="it"
           />
@@ -76,7 +76,7 @@ export default function DetailsSection() {
               "Résolution de problèmes logiciels",
               "Conseils en direct"
             ]}
-            link="#contact"
+            link="/services/depannage/assistance-distance"
             accentColor="support"
             theme="it"
           />
