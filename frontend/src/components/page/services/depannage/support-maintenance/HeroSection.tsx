@@ -13,6 +13,7 @@ export default function SupportMaintenanceHeroSection() {
       primaryButtonLink="#contact"
       secondaryButtonText="Retour aux services"
       secondaryButtonLink="/services/depannage"
+      accentColor="#f39c12" // Orange for support
     />
   );
 }
