@@ -7,16 +7,16 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-primary">
       <ContactHeroSection />
-      
-      <div className="container mx-auto py-8 md:py-16">
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16">
         {/* Section principale avec grille responsive */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto mb-12 md:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-12 md:mb-16">
           <ContactInfoSection />
           <ContactFormSection />
         </div>
 
-        {/* Section carte avec espacement amélioré */}
-        <div className="max-w-6xl mx-auto rounded-xl overflow-hidden shadow-lg px-15">
+        {/* Section carte avec espacement et centrage */}
+        <div className="rounded-xl overflow-hidden shadow-lg">
           <CardMap />
         </div>
       </div>
