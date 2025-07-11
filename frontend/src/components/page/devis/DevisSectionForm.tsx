@@ -1,16 +1,18 @@
-export default function ContactFormSection() {
+"use client";
+
+export default function DevisFormSection() {
   return (
     <form
-      id="contact-form"
-      className="bg-gradient-to-br from-primary via-primary/90 to-secondary/10 rounded-3xl shadow-2xl border-l-8 border-secondary p-6 flex flex-col gap-4"
+      id="devis-form"
+      className="max-w-2xl mx-auto my-16 bg-gradient-to-br from-primary via-primary/90 to-secondary/10 rounded-3xl shadow-2xl border-l-8 border-secondary p-6 flex flex-col gap-4"
     >
       <div className="mb-1">
         <span className="inline-block bg-secondary text-tertiary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow">
-          Écrivez-nous
+          Demandez un Devis
         </span>
       </div>
       <h2 className="text-2xl font-bold mb-4 text-secondary font-poppins">
-        Formulaire de contact
+        Formulaire de Devis
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div>
@@ -41,44 +43,57 @@ export default function ContactFormSection() {
         </div>
       </div>
       <div>
-        <label htmlFor="type" className="block text-tertiary font-medium mb-1">
-          Type de demande
+        <label htmlFor="service" className="block text-tertiary font-medium mb-1">
+          Type de service
         </label>
         <select
-          id="type"
-          name="type"
+          id="service"
+          name="service"
           required
           className="w-full border border-secondary/40 rounded-lg px-3 py-1.5 bg-primary/80 text-tertiary focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition"
         >
           <option value="">Sélectionnez</option>
           <option value="web">Création web</option>
           <option value="depannage">Dépannage informatique</option>
-          <option value="devis">Demande de devis</option>
+          <option value="formation">Formation seniors</option>
           <option value="autre">Autre</option>
         </select>
       </div>
-      <div>
-        <label htmlFor="phone" className="block text-tertiary font-medium mb-1">
-          Téléphone (optionnel)
-        </label>
-        <input
-          id="phone"
-          name="phone"
-          type="tel"
-          placeholder="Votre numéro de téléphone"
-          className="w-full border border-secondary/40 rounded-lg px-3 py-1.5 bg-primary/80 text-tertiary placeholder-quaternary focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition"
-        />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div>
+          <label htmlFor="phone" className="block text-tertiary font-medium mb-1">
+            Téléphone (optionnel)
+          </label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="Votre numéro de téléphone"
+            className="w-full border border-secondary/40 rounded-lg px-3 py-1.5 bg-primary/80 text-tertiary placeholder-quaternary focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+          />
+        </div>
+        <div>
+          <label htmlFor="file" className="block text-tertiary font-medium mb-1">
+            Joindre un fichier (optionnel)
+          </label>
+          <input
+            id="file"
+            name="file"
+            type="file"
+            className="w-full border border-secondary/40 rounded-lg px-3 py-1.5 bg-primary/80 text-tertiary focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+          />
+        </div>
       </div>
       <div>
         <label htmlFor="message" className="block text-tertiary font-medium mb-1">
-          Message
+          Description du projet
         </label>
         <textarea
           id="message"
           name="message"
           rows={4}
           required
-          placeholder="Votre message..."
+          placeholder="Décrivez votre projet ou vos besoins..."
           className="w-full border border-secondary/40 rounded-lg px-3 py-1.5 bg-primary/80 text-tertiary placeholder-quaternary focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition resize-none"
         />
       </div>

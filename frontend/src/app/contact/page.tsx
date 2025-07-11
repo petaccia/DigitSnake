@@ -1,7 +1,7 @@
 import ContactHeroSection from "@/components/page/contact/ContactHeroSection";
 import ContactInfoSection from "@/components/page/contact/ContactInfoSection";
-import ContactFormSection from "@/components/page/contact/ContactFormSection";
 import CardMap from "@/components/page/contact/CardMap";
+import ContactDevisSectionButton from "@/components/page/contact/ContactDevisSectionButton";
 
 export default function ContactPage() {
   return (
@@ -12,12 +12,12 @@ export default function ContactPage() {
         {/* Section principale avec grille responsive */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-12 md:mb-16">
           <ContactInfoSection />
-          <ContactFormSection />
+          <CardMap />
         </div>
 
         {/* Section carte avec espacement et centrage */}
         <div className="rounded-xl overflow-hidden shadow-lg">
-          <CardMap />
+          <ContactDevisSectionButton />
         </div>
       </div>
     </main>
