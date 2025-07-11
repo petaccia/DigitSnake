@@ -63,7 +63,7 @@ const Navbar = () => {
       animate={controls}
       layout
     >
-      <div className="container mx-auto px-4">
+      <div className="px-12 ">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <motion.div

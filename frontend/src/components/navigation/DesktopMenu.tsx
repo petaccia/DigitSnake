@@ -9,7 +9,7 @@ import { BsChevronDown } from "react-icons/bs";
 interface MenuItem {
   name: string;
   href: string;
-  icon: IconType;
+  icon: string | IconType; // Accepte emojis et icônes React
   children?: MenuItem[];
 }
 
@@ -22,7 +22,7 @@ const DesktopMenu: React.FC<DesktopMenuProps> = ({ menuItems }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   // Fonction pour rendre l'icône/emoji
-  const renderIcon = (icon: IconType | string, className: string = "w-5 h-5") => {
+  const renderIcon = (icon: string | IconType, className: string = "w-5 h-5") => {
     if (typeof icon === 'string') {
       // Emoji : on force la taille, l'alignement et l'espacement
       return (
@@ -42,7 +42,7 @@ const DesktopMenu: React.FC<DesktopMenuProps> = ({ menuItems }) => {
 
   return (
     <nav aria-label="Main navigation">
-      <ul className="hidden lg:flex items-center space-x-1">
+      <ul className="hidden lg:flex md:justify-between items-center space-x-1">
         {menuItems.map((item, index) => {
           const hasChildren = !!item.children;
           const isActive = pathname === item.href || 
