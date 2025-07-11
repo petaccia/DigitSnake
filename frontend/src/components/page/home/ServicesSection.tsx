@@ -24,7 +24,7 @@ export default function ServicesSection() {
               </ul>
             </article>
           </Link>
-          <Link href="/services/depannage">
+          <Link href="/services">
             <article className="bg-primary/90 p-8 rounded-2xl shadow-xl/35 shadow-octonary hover:shadow-2xl/35 transition-all duration-300 border border-octonary/30 transform hover:-translate-y-2">
               <div className="flex items-center mb-4">
                 <div className="text-3xl mr-3 text-octonary">🛠️</div>
@@ -43,6 +43,24 @@ export default function ServicesSection() {
                   <li className="flex items-center text-gray-200"><span className="text-octonary mr-2">✓</span> Wifi & réseau</li>
                 </ul>
               </div>
+            </article>
+          </Link>
+        </div>
+        <div className="max-w-3xl mx-auto mt-8 flex justify-center">
+          <Link href="/services/formation">
+            <article className="bg-primary/90 p-8 rounded-2xl shadow-xl/35 shadow-senary hover:shadow-2xl/35 transition-all duration-300 border border-senary/30 transform hover:-translate-y-2">
+              <div className="flex items-center mb-4">
+                <div className="text-3xl mr-3">📚</div>
+                <h3 className="text-2xl font-bold text-senary">Formation Seniors</h3>
+              </div>
+              <p className="text-gray-200 mb-5 text-lg">
+                Des <span className="font-semibold text-senary">ateliers personnalisés</span> pour les seniors, pour apprendre à utiliser l'informatique, les smartphones et les tablettes avec confiance.
+              </p>
+              <ul className="list-none space-y-2">
+                <li className="flex items-center text-gray-200"><span className="text-senary mr-2">✓</span> Apprentissage de la navigation internet</li>
+                <li className="flex items-center text-gray-200"><span className="text-senary mr-2">✓</span> Gestion des emails et messageries</li>
+                <li className="flex items-center text-gray-200"><span className="text-senary mr-2">✓</span> Utilisation des réseaux sociaux</li>
+              </ul>
             </article>
           </Link>
         </div>
