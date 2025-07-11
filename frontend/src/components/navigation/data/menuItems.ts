@@ -1,17 +1,9 @@
-import { 
-  BsHouse, 
-  BsCodeSlash, 
-  BsBriefcase, 
-  BsPerson, 
-  BsEnvelope, 
-  BsGearFill
-} from "react-icons/bs";
 import { IconType } from "react-icons";
 
 export interface MenuItem {
   name: string;
   href: string;
-  icon: IconType | string; // Accepte icône React ou emoji
+  icon: string | IconType;
   children?: MenuItem[];
 }
 
