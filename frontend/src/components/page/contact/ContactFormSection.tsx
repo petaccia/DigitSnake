@@ -1,0 +1,62 @@
+export default function ContactFormSection() {
+  return (
+    <form
+      id="contact-form"
+      className="bg-gradient-to-br from-primary via-primary/90 to-secondary/10 rounded-3xl shadow-2xl border-l-8 border-secondary p-8 flex flex-col gap-6 max-w-xl mx-auto"
+    >
+      <div className="mb-2">
+        <span className="inline-block bg-secondary text-tertiary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow">
+          Écrivez-nous
+        </span>
+      </div>
+      <h2 className="text-3xl font-bold mb-6 text-secondary font-poppins">
+        Formulaire de contact
+      </h2>
+      <div>
+        <label htmlFor="name" className="block text-tertiary font-medium mb-2">
+          Nom
+        </label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          placeholder="Votre nom"
+          className="w-full border border-secondary/40 rounded-lg px-4 py-2 bg-primary/80 text-tertiary placeholder-quaternary focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+        />
+      </div>
+      <div>
+        <label htmlFor="email" className="block text-tertiary font-medium mb-2">
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          placeholder="votre@email.com"
+          className="w-full border border-secondary/40 rounded-lg px-4 py-2 bg-primary/80 text-tertiary placeholder-quaternary focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+        />
+      </div>
+      <div>
+        <label htmlFor="message" className="block text-tertiary font-medium mb-2">
+          Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows={5}
+          required
+          placeholder="Votre message..."
+          className="w-full border border-secondary/40 rounded-lg px-4 py-2 bg-primary/80 text-tertiary placeholder-quaternary focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition resize-none"
+        />
+      </div>
+      <button
+        type="submit"
+        className="mt-2 bg-secondary text-tertiary font-bold py-3 px-8 rounded-lg hover:bg-octonary hover:text-primary transition text-lg shadow-md"
+      >
+        Envoyer
+      </button>
+    </form>
+  );
+}
