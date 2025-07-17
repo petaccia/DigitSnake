@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, useAnimation, TargetAndTransition, Variants, Transition } from "framer-motion";
+import { motion, useAnimation, Variants } from "framer-motion";
 import LogoNavbar from "../logo/LogoNavbar";
 import DesktopMenu from "./DesktopMenu";
 import DesktopButton from "./utils/buttons/DesktopButton";
@@ -35,20 +35,21 @@ const Navbar = () => {
         stiffness: 60,
         damping: 18,
         duration: 0.8,
-      } as Transition,
+      }
     }
   };
 
-  const itemVariants : Variants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: -10 },
-    visible: (i = 1): TargetAndTransition => ({
+    visible: (i: number) => ({
       opacity: 1,
       y: 0,
       transition: {
         delay: i * 0.2,
         type: "spring",
         stiffness: 70,
-        damping: 15
+        damping: 15,
+        duration: 0.6
       }
     })
   };
@@ -58,12 +59,12 @@ const Navbar = () => {
       className={`sticky top-0 z-50 backdrop-blur-lg transition-all duration-300 ${
         isScrolled ? "bg-primary/80 py-2 shadow-md" : "bg-primary/50 py-4"
       }`}
-      variants={ navbarVariants }
+      variants={navbarVariants}
       initial="hidden"
       animate={controls}
       layout
     >
-      <div className="px-12 ">
+      <div className="px-12">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <motion.div
