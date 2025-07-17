@@ -2,14 +2,66 @@
 
 
 @theme  {
+
+  /* Blue*/
   --color-primary: #051c29; /* bleu foncè*/
   --color-secondary: #14b8a6; /* bleu clair - informatique */
+  --color-secondary-100: #051c29; /* bleu clair - informatique */
+  --color-secondary-200: #064e3b; /* bleu clair - informatique */
+  --color-secondary-300: #0d9488; /* bleu clair - informatique */
+  --color-secondary-400: #0f766e; /* bleu clair - informatique */
+  --color-secondary-500: #115e59; /* bleu clair - informatique */
+  --color-secondary-600: #134e4a; /* bleu clair - informatique */
+  --color-secondary-700: #14532d; /* bleu clair - informatique */
+  --color-secondary-800: #166534; /* bleu clair - informatique */
+  --color-secondary-900: #1e3a8a; /* bleu clair - informatique */
+
   --color-tertiary: #f9fafb; /* blanc */
+
   --color-quaternary: #9ca3af; /* gris - fracture numérique */
-  --color-quinary: #10b981; /* vert - site web */
-  --color-senary: #8b5cf6; /* violet - seniors */
-  --color-octonary: #f59e0b; /* orange - dépannage informatique */
-  --color-redWifi: #e74c3c; /* rouge - wifi */  
+
+/* Green */
+  --color-quinary: #059669; /* vert - site web */
+ 
+  --color-quinary-100: #d1fae5; /* vert clair - site web */
+  --color-quinary-200: #a7f3d0; /* vert clair - site web */
+  --color-quinary-300: #059669; /* vert - site web */
+  --color-quinary-400: #047857; /* vert - site web */
+  --color-quinary-500: #065f46; /* vert - site web */
+  --color-quinary-600: #064e3b; /* vert - site web */
+  --color-quinary-700: #14532d; /* vert - site web */
+  --color-quinary-800: #166534; /* vert - site web */
+  --color-quinary-900: #1e3a8a; /* vert - site web */
+
+  /* Purple */
+  --color-senary: #7c3aed; /* violet - seniors */
+  --color-senary-300: #6d28d9; /* violet - seniors */
+  --color-senary-400: #5b21b6; /* violet - seniors */
+  --color-senary-500: #4c1d95; /* violet - seniors */
+  --color-senary-600: #3e1f72; /* violet - seniors */
+  --color-senary-700: #312e81; /* violet - seniors */
+  --color-senary-800: #3730a3; /* violet - seniors */
+  --color-senary-900: #4f46e5; /* violet - seniors */
+
+  /* Orange */
+  --color-octonary: #d97706; /* orange - dépannage informatique */
+  --color-octonary-300: #b45309; /* orange - dépannage informatique */
+  --color-octonary-400: #92400e; /* orange - dépannage informatique */
+  --color-octonary-500: #78350f; /* orange - dépannage informatique */
+  --color-octonary-600: #652b0a; /* orange - dépannage informatique */
+  --color-octonary-700: #5a2c09; /* orange - dépannage informatique */
+  --color-octonary-800: #4a2208; /* orange - dépannage informatique */
+  --color-octonary-900: #3c1a07; /* orange - dépannage informatique */
+
+  /* Red */
+  --color-redWifi: #dc2626; /* rouge - wifi */  
+  --color-redWifi-300: #b91c1c; /* rouge - wifi */  
+  --color-redWifi-400: #991b1b; /* rouge - wifi */  
+  --color-redWifi-500: #7f1d1d; /* rouge - wifi */  
+  --color-redWifi-600: #6b1c1c; /* rouge - wifi */  
+  --color-redWifi-700: #5c1919; /* rouge - wifi */  
+  --color-redWifi-800: #4c1616; /* rouge - wifi */  
+  --color-redWifi-900: #3d1212; /* rouge - wifi */  
 
   --font-roboto: "Roboto", sans-serif;
   --font-poppins: "Poppins", sans-serif;

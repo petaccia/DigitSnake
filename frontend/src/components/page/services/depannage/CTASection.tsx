@@ -11,7 +11,7 @@ export default function CTASection() {
       description: "Faites installer votre matériel informatique par des experts. Configuration optimale et sécurisée garantie.",
       primaryAction: "Demander une installation",
       primaryHref: "/contact?service=installation",
-      bgColor: "bg-green-900/30",
+      bgColor: "bg-quinary-900/30",
       accentColor: "green"
     },
     "/services/depannage/materiel": {
@@ -60,34 +60,34 @@ export default function CTASection() {
 
   const accentClasses = {
     green: {
-      primary: "bg-green-500 hover:bg-green-600",
-      secondary: "border-green-400 text-green-400 hover:bg-green-400/10 hover:text-green-300",
-      info: "bg-green-800/70 border-green-700"
+      primary: "bg-quinary hover:bg-quinary-600",
+      secondary: "border-quinary text-quinary-100 hover:bg-quinary/10 hover:text-quinary-300",
+      info: "bg-quinary-800/70 border-quinary-700"
     },
     red: {
-      primary: "bg-red-500 hover:bg-red-600",
-      secondary: "border-red-400 text-red-400 hover:bg-red-400/10 hover:text-red-300",
-      info: "bg-red-800/70 border-red-700"
+      primary: "bg-redWifi hover:bg-redWifi-600",
+      secondary: "border-redWifi text-redWifi-100 hover:bg-redWifi/10 hover:text-redWifi-300",
+      info: "bg-redWifi-800/70 border-redWifi-700"
     },
     blue: {
-      primary: "bg-blue-500 hover:bg-blue-600",
+      primary: "bg-secondary hover:bg-blue-600",
       secondary: "border-blue-400 text-blue-400 hover:bg-blue-400/10 hover:text-blue-300",
       info: "bg-blue-800/70 border-blue-700"
     },
     purple: {
-      primary: "bg-purple-500 hover:bg-purple-600",
-      secondary: "border-purple-400 text-purple-400 hover:bg-purple-400/10 hover:text-purple-300",
-      info: "bg-purple-800/70 border-purple-700"
+      primary: "bg-senary hover:bg-senary-600",
+      secondary: "border-senary text-senary-100 hover:bg-senary/10 hover:text-senary-300",
+      info: "bg-senary-800/70 border-senary-700"
     },
     orange: {
-      primary: "bg-orange-500 hover:bg-orange-600",
-      secondary: "border-orange-400 text-orange-400 hover:bg-orange-400/10 hover:text-orange-300",
-      info: "bg-orange-800/70 border-orange-700"
+      primary: "bg-octonary hover:bg-octonary-600",
+      secondary: "border-octonary text-octonary-100 hover:bg-octonary/10 hover:text-octonary-300",
+      info: "bg-octonary-800/70 border-octonary-700"
     },
     indigo: {
-      primary: "bg-indigo-500 hover:bg-indigo-600",
-      secondary: "border-indigo-400 text-indigo-400 hover:bg-indigo-400/10 hover:text-indigo-300",
-      info: "bg-indigo-800/70 border-indigo-700"
+      primary: "bg-blue-900 hover:bg-blue-900/90",
+      secondary: "border-blue-900 text-blue-900 hover:bg-blue-900/10 hover:text-blue-900",
+      info: "bg-blue-900/70 border-blue-900"
     }
   };
 
