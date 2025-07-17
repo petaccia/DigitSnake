@@ -1,11 +1,10 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { ctaConfig } from "../config/ctaConfig";
+import { motion } from "framer-motion";
 
 export default function CTASection() {
   const pathname = usePathname();
-
-
   const config = ctaConfig[pathname as keyof typeof ctaConfig] || ctaConfig.default;
 
   const accentClasses = {
@@ -44,38 +43,71 @@ export default function CTASection() {
   const colors = accentClasses[config.accentColor as keyof typeof accentClasses] || accentClasses.indigo;
 
   return (
-    <section className={`py-16 md:py-24 ${config.bgColor} relative overflow-hidden`} id="contact">
+    <motion.section
+      className={`py-16 md:py-24 ${config.bgColor} relative overflow-hidden`}
+      id="contact"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+    >
       <div 
         className="absolute inset-0 opacity-20 bg-cover bg-center" 
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')" }}
       />
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 drop-shadow-lg">{config.title}</h2>
-          <p className="text-xl mb-8 text-gray-100">
+          <motion.h2
+            className="text-3xl md:text-4xl font-bold mb-6 drop-shadow-lg"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+          >
+            {config.title}
+          </motion.h2>
+          <motion.p
+            className="text-xl mb-8 text-gray-100"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+          >
             {config.description}
-          </p>
+          </motion.p>
           <div className="flex flex-col md:flex-row justify-center gap-4">
-            <a 
-              href={config.primaryHref} 
+            <motion.a
+              href={config.primaryHref}
               className={`${colors.primary} text-white transition-all duration-300 px-6 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl text-lg`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.2 }}
             >
               {config.primaryAction}
-            </a>
-            <a 
-              href="tel:+33612345678" 
+            </motion.a>
+            <motion.a
+              href="tel:+33612345678"
               className={`bg-transparent border-2 ${colors.secondary} transition-all duration-300 px-6 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl text-lg`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.2 }}
             >
               Appeler : 06 12 34 56 78
-            </a>
+            </motion.a>
           </div>
-          <div className={`mt-8 ${colors.info} rounded-2xl p-6 border inline-block`}>
+          <motion.div
+            className={`mt-8 ${colors.info} rounded-2xl p-6 border inline-block`}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+          >
             <p className="text-gray-200">
               <strong>Horaires :</strong> Lundi au Vendredi, 9h-18h (hors jours fériés)
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

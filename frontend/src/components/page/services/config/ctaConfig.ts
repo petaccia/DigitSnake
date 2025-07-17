@@ -36,7 +36,7 @@ export const ctaConfig = {
     description: "Inscrivez-vous à nos formations personnalisées pour seniors. Apprenez à utiliser vos appareils en toute sérénité.",
     primaryAction: "Réserver une formation",
     primaryHref: "/contact?service=formation",
-    bgColor: "bg-/30",
+    bgColor: "bg-octonary/30",
     accentColor: "orange"
   },
   default: {
