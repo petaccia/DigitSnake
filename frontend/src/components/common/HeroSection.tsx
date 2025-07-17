@@ -9,7 +9,6 @@ interface HeroSectionProps {
   badgeText?: string;
   primaryButtonText: string;
   primaryButtonLink: string;
-  secondaryButtonText: string;
   secondaryButtonLink: string;
   accentColor?: string; // Color for buttons and badge
 }
@@ -21,7 +20,6 @@ export default function HeroSection({
   badgeText = "Service professionnel",
   primaryButtonText,
   primaryButtonLink,
-  secondaryButtonText,
   secondaryButtonLink,
   accentColor = "#6366f1", // Default indigo color
 }: HeroSectionProps) {
@@ -60,15 +58,6 @@ export default function HeroSection({
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
               </svg>
               {primaryButtonText}
-            </a>
-            <a
-              href={secondaryButtonLink}
-              className="border-2 border-white text-white hover:bg-white/10 transition-all duration-300 px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl flex items-center gap-2"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-              </svg>
-              {secondaryButtonText}
             </a>
           </div>
           

@@ -1,28 +1,127 @@
 "use client";
+import { usePathname } from "next/navigation";
 
 export default function CTASection() {
+  const pathname = usePathname();
+
+  // Configuration des CTA par service de dépannage
+  const ctaConfig = {
+    "/services/depannage/installation": {
+      title: "Besoin d'une Installation Professionnelle ?",
+      description: "Faites installer votre matériel informatique par des experts. Configuration optimale et sécurisée garantie.",
+      primaryAction: "Demander une installation",
+      primaryHref: "/contact?service=installation",
+      bgColor: "bg-green-900/30",
+      accentColor: "green"
+    },
+    "/services/depannage/materiel": {
+      title: "Problème de Matériel Informatique ?",
+      description: "Diagnostic et réparation de votre matériel informatique. De la simple pièce défectueuse au remplacement complet.",
+      primaryAction: "Diagnostiquer mon matériel",
+      primaryHref: "/contact?service=materiel",
+      bgColor: "bg-secondary/30",
+      accentColor: "blue"
+    },
+    "/services/depannage/support-maintenance": {
+      title: "Besoin d'un Support & Maintenance ?",
+      description: "Souscrivez à un contrat de maintenance pour une assistance continue et proactive de votre système informatique.",
+      primaryAction: "Souscrire à la maintenance",
+      primaryHref: "/contact?service=maintenance",
+      bgColor: "bg-octonary/30",
+      accentColor: "orange"
+    },
+    "/services/depannage/wifi-reseaux": {
+      title: "Problème de WiFi ou Réseau ?",
+      description: "Optimisez votre connexion réseau et WiFi. Installation, configuration et dépannage de vos équipements réseau.",
+      primaryAction: "Résoudre mon problème réseau",
+      primaryHref: "/contact?service=wifi",
+      bgColor: "bg-redWifi/30",
+      accentColor: "red"
+    },
+    "/services/formation": {
+      title: "Envie d'Apprendre l'Informatique ?",
+      description: "Inscrivez-vous à nos formations personnalisées pour seniors. Apprenez à utiliser vos appareils en toute sérénité.",
+      primaryAction: "Réserver une formation",
+      primaryHref: "/contact?service=formation",
+      bgColor: "bg-/30",
+      accentColor: "orange"
+    },
+    default: {
+      title: "Besoin d'une Assistance Informatique ?",
+      description: "Contactez-nous dès maintenant pour une intervention rapide ou un devis personnalisé. Nous sommes là pour résoudre vos problèmes informatiques efficacement.",
+      primaryAction: "Demander une intervention",
+      primaryHref: "/contact?service=depannage",
+      bgColor: "bg-blue-900/30",
+      accentColor: "indigo"
+    }
+  };
+
+  const config = ctaConfig[pathname as keyof typeof ctaConfig] || ctaConfig.default;
+
+  const accentClasses = {
+    green: {
+      primary: "bg-green-500 hover:bg-green-600",
+      secondary: "border-green-400 text-green-400 hover:bg-green-400/10 hover:text-green-300",
+      info: "bg-green-800/70 border-green-700"
+    },
+    red: {
+      primary: "bg-red-500 hover:bg-red-600",
+      secondary: "border-red-400 text-red-400 hover:bg-red-400/10 hover:text-red-300",
+      info: "bg-red-800/70 border-red-700"
+    },
+    blue: {
+      primary: "bg-blue-500 hover:bg-blue-600",
+      secondary: "border-blue-400 text-blue-400 hover:bg-blue-400/10 hover:text-blue-300",
+      info: "bg-blue-800/70 border-blue-700"
+    },
+    purple: {
+      primary: "bg-purple-500 hover:bg-purple-600",
+      secondary: "border-purple-400 text-purple-400 hover:bg-purple-400/10 hover:text-purple-300",
+      info: "bg-purple-800/70 border-purple-700"
+    },
+    orange: {
+      primary: "bg-orange-500 hover:bg-orange-600",
+      secondary: "border-orange-400 text-orange-400 hover:bg-orange-400/10 hover:text-orange-300",
+      info: "bg-orange-800/70 border-orange-700"
+    },
+    indigo: {
+      primary: "bg-indigo-500 hover:bg-indigo-600",
+      secondary: "border-indigo-400 text-indigo-400 hover:bg-indigo-400/10 hover:text-indigo-300",
+      info: "bg-indigo-800/70 border-indigo-700"
+    }
+  };
+
+  const colors = accentClasses[config.accentColor as keyof typeof accentClasses] || accentClasses.indigo;
+
   return (
-    <section className="py-16 md:py-24 bg-blue-900/30 relative overflow-hidden" id="contact">
-      <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('https://unsplash.com/fr/photos/un-ordinateur-portable-dell-avec-un-ecran-rouge-1C5F88Af9ZU')" }}>
-        {/* Replace the URL with a specific Unsplash image related to technical support or customer service */}
-      </div>
+    <section className={`py-16 md:py-24 ${config.bgColor} relative overflow-hidden`} id="contact">
+      <div 
+        className="absolute inset-0 opacity-20 bg-cover bg-center" 
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')" }}
+      />
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 drop-shadow-lg">Besoin d'une Assistance Informatique ?</h2>
-          <p className="text-xl mb-8 text-indigo-100">
-            Contactez-nous dès maintenant pour une intervention rapide ou un devis personnalisé. Nous sommes là pour résoudre vos problèmes informatiques efficacement.
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 drop-shadow-lg">{config.title}</h2>
+          <p className="text-xl mb-8 text-gray-100">
+            {config.description}
           </p>
           <div className="flex flex-col md:flex-row justify-center gap-4">
-            <a href="tel:+33612345678" className="bg-indigo-500 text-white hover:bg-indigo-600 transition-all duration-300 px-6 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl text-lg">
-              Appeler maintenant : 06 12 34 56 78
+            <a 
+              href={config.primaryHref} 
+              className={`${colors.primary} text-white transition-all duration-300 px-6 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl text-lg`}
+            >
+              {config.primaryAction}
             </a>
-            <a href="mailto:contact@digitsnake.fr" className="bg-transparent border-2 border-indigo-400 text-indigo-400 hover:bg-indigo-400/10 hover:text-indigo-300 transition-all duration-300 px-6 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl text-lg">
-              Envoyer un email
+            <a 
+              href="tel:+33612345678" 
+              className={`bg-transparent border-2 ${colors.secondary} transition-all duration-300 px-6 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl text-lg`}
+            >
+              Appeler : 06 12 34 56 78
             </a>
           </div>
-          <div className="mt-8 bg-indigo-800/70 rounded-2xl p-6 border border-indigo-700 inline-block">
-            <p className="text-indigo-200">
-              <strong>Horaires d'intervention :</strong> Lundi au Vendredi, 9h-18h (hors jours fériés)
+          <div className={`mt-8 ${colors.info} rounded-2xl p-6 border inline-block`}>
+            <p className="text-gray-200">
+              <strong>Horaires :</strong> Lundi au Vendredi, 9h-18h (hors jours fériés)
             </p>
           </div>
         </div>
