@@ -13,7 +13,6 @@ export default function ContactHeroSection() {
       badgeText="Contact"
       primaryButtonText="Nous écrire"
       primaryButtonLink="#contact-form"
-      secondaryButtonText=""
       secondaryButtonLink=""
     />
   );

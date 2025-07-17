@@ -11,7 +11,6 @@ export default function InstallationHeroSection() {
       badgeText="Service professionnel"
       primaryButtonText="Demander une installation"
       primaryButtonLink="#contact"
-      secondaryButtonText="Retour aux services"
       secondaryButtonLink="/services/depannage"
       accentColor="#27ae60" // Green for software
     />
