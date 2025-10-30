@@ -44,7 +44,7 @@ export default function DigitSnakeLogo() {
        className='font-ma-shan-zheng'
         
       >
-        DIGITSNAKE
+        Beaver&apos;Aid
       </text>
     </svg>
   );
